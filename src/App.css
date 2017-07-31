@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.game-title {
+  font-size: 2em;
+  margin: 1em 0 0.5em;
+}
+
+.game-desc {
+  margin-bottom: .5em;
+}
+
+.start-new-game a {
+  color: #00c;
+  text-decoration: none;
+}
+
+.error-msg {
+  color: #c00;
+  margin-bottom:.2em;
+}
+
+.guess-input {
+  text-align: center;
+  letter-spacing: 0.5rem;
+  padding-left: 0.5rem;
+  vertical-align: top;
+
+  width: 200px;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 4rem;
+}
+
+.submit-btn {
+  cursor: pointer; /* fallback */
+  cursor: -webkit-grab;
+  vertical-align: top;
+
+  height: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 2.5rem;
+  padding: 0 1rem;
+}
+
+.game-record-list {
+  list-style: none;
+  margin-top: .5em;
+}
+
+.game-record-list > li {
+  margin: .2em 0;
+  font-size: 1.2em;
+}
+
+.game-record-list .highlight {
+  color: #00c;
+}
+
+.game-record-number {
+  font-weight: bold;
+  margin-right: .6em;
+}
+
+@media(max-width: 530px) {
+  .container {
+    width: 320px;
+  }
+  .game-title {
+    font-size: 1.5em;
+  }
+  .guess-input {
+    width: 160px;
+    height: 3.5rem;
+    line-height: 3.5rem;
+    font-size: 3rem;
+  }
+  .submit-btn {
+    height: 3.5rem;
+    line-height: 3.5rem;
+    font-size: 1.5rem;
+    padding: 0 .5rem;
+  }
+}
